@@ -34,7 +34,7 @@ class URL{
 
         $keyStr = implode("&",$valueArr);
         $combined .= ($keyStr);
-        
+
         return $combined;
     }
 
@@ -68,7 +68,7 @@ class URL{
      * get
      * get方式请求资源
      * @param string $url     基于的baseUrl
-     * @param array $keysArr  参数列表数组      
+     * @param array $keysArr  参数列表数组
      * @return string         返回的资源内容
      */
     public function get($url, $keysArr){
@@ -88,9 +88,9 @@ class URL{
 
         $ch = curl_init();
         if(! $flag) curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE); 
-        curl_setopt($ch, CURLOPT_POST, TRUE); 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $keysArr); 
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_POST, TRUE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $keysArr);
         curl_setopt($ch, CURLOPT_URL, $url);
         $ret = curl_exec($ch);
 

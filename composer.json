@@ -1,9 +1,9 @@
 {
   "name": "zongphp/qq",
   "description": "QQ登录组件",
-  "type": "project",
   "keywords": [
-    "QQ登录组件"
+    "zongphp",
+    "邮件处理"
   ],
   "license": "MIT",
   "minimum-stability": "stable",
